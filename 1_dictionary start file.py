@@ -9,7 +9,7 @@ phonebook = {'Chris':'555−1111',
 print()
 print('*****  start section 1 - print dictionary ********')
 print()
-
+print(phonebook)
 
 
 
@@ -19,7 +19,7 @@ print('*****  end section 1 ********')
 print()
 
 
-'''
+
 
 
 print()

@@ -15,6 +15,9 @@ room-number,use,sq-ft,price
 
 '''
 
+import csv
+
+
 
 
 
@@ -47,3 +50,9 @@ datastore = { "medical":[
 
       ]
 }
+
+with open("retail_space.csv", "w", newline="") as file:
+    writer = csv.DictWriter(file, fieldnames=["room-number", "use", "sq-ft", "price"])
+
+    writer.writeheader()
+    writer.writerows(datastore["medical"])
